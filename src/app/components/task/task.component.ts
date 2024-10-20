@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { InputComponent } from '../../shared/components/input/input.component';
-import { ErrorModel } from '../../shared/Interfaces/common.interface';
+import { InputComponent } from '@shared/components/input/input.component';
+import { ErrorModel } from '@shared/Interfaces/common.interface';
 
 @Component({
   selector: 'app-task',

@@ -3,7 +3,8 @@
     <input [readonly]="readonly" type="text" [name]="name" [formControl]="task" [id]="id" (input)="onInput()"
         class="input" [placeholder]="placeholder" />
     <div *ngIf="task?.invalid && (task?.dirty || task?.touched)" class="error-message">
-        <p *ngIf="task?.errors?.['required']">Task is required...</p>
-        <p *ngIf="task?.errors?.['minLength']">Task is minLength...</p>
+        <p *ngFor="let error of errorObjectKeys(task?.errors)">
+            {{errors[error]}}
+        </p>
     </div>
 </div>

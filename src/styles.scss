@@ -8,6 +8,50 @@
     text-decoration: none;
 }
 
-body{
+:root {
+
+    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    --error-color: #dc143c;
+    --white-color: #ffffff;
+    --light-border-color: #80808047;
+
+    --border-radius-very-small: 5px;
+    --border-radius-small: 10px;
+    --border-radius-medium: 15px;
+    --border-radius-large: 20px;
+    --border-radius-very-larger: 25px;
+
+
+    --font-size-very-small: 5px;
+    --font-size-small: 10px;
+    --font-size-medium: 15px;
+    --font-size-large: 20px;
+    --font-size-very-larger: 25px;
+
+    --padding-very-small: 5px;
+    --padding-small: 10px;
+    --padding-medium: 15px;
+    --padding-large: 20px;
+    --padding-very-larger: 25px;
+
+    --margin-very-small: 5px;
+    --margin-small: 10px;
+    --margin-medium: 15px;
+    --margin-large: 20px;
+    --margin-very-larger: 25px;
+
+    --z-index-1: 1;
+    --z-index-2: 2;
+    --z-index-3: 3;
+    --z-index-4: 4;
+    --z-index-5: 5;
+    --z-index-6: 6;
+}
+
+body {
     background: #f9f8f8;
+    font-family: var(--font-family);
+    width: 100vw;
+    height: 100vh;
 }
