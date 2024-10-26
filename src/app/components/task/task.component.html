@@ -1,1 +1,10 @@
-<app-input [errors]="taskErrors" [disabled]="false" [readonly]="false" [id]="3" [title]="'Enter Your task'" [placeholder]="'Message...'" [name]="'task'" (OnInput)="onInput($event)"></app-input>
+<div class="main-wrapper">
+    <div class="main-wrapper__task-wrapper">
+        <app-input [errors]="taskErrors" [disabled]="false" [readonly]="false" [id]="3" [title]="'Enter Your task'"
+            [placeholder]="'TASK....'" [name]="'task'" (OnInput)="onInput($event)"></app-input>
+        <app-button (OnClick)="onClick()" [title]="'Save Task'"></app-button>
+        <div>
+            <app-tasks [tasks]="tasks"></app-tasks>
+        </div>
+    </div>
+</div>

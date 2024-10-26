@@ -1,0 +1,24 @@
+<div class="tasks-wrapper">
+    <div class="tasks-wrapper__heading-wrapper">
+        <h2 class="tasks-wrapper__heading-wrapper__heading">
+            Tasks
+        </h2>
+    </div>
+    <div class="tasks-wrapper__tasks">
+        <div *ngFor="let task of tasks;let i = index" class="tasks-wrapper__tasks__task">
+            <div class="tasks-wrapper__tasks__task__content">
+                <p class="data">
+                    {{task}}
+                </p>
+            </div>
+            <div class="tasks-wrapper__tasks__task__icons">
+                <button (click)="onDelete(i)" class="icon">
+                    <img [src]="imagesConstants.deleteIcon" alt="delete">
+                </button>
+                <button (click)="onEdit(i)"  class="icon">
+                    <img [src]="imagesConstants.editIcon" alt="edit">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
